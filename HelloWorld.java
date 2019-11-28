@@ -17,7 +17,10 @@ How are you?
 
 public class HelloWorld {
    public static void main(String[] args) {
-      System.out.print("Hello world!");
+      // Output three line statement
+      System.out.println("Hello world!");
+      System.out.println("How are you?");
+      System.out.println("   (I'm fine).");
 
       return;
    }
