@@ -37,6 +37,10 @@ public class BasicOutputWithVariables {
        userNum = scnr.nextInt();
 
        // Output user input
-       System.out.print("You entered: " + userNum);
+       System.out.println("You entered: " + userNum);
+
+       // Calculate and output squared and cubed values for user input
+       System.out.println(userNum + " squared is " + (userNum * userNum));
+       System.out.println("And " + userNum + " cubed is " + (userNum * userNum * userNum) + "!!");
    }
 }
