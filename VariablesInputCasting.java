@@ -52,6 +52,10 @@ public class VariablesInputCasting {
         // Output user input
         System.out.println(userInt + " " + userDouble + " " + userChar + " " + userString);
         // Output user input in reverse order
-        System.out.print(userString + " " + userChar + " " + userDouble + " " + userInt);
+        System.out.println(userString + " " + userChar + " " + userDouble + " " + userInt);
+        // Cast and output double to integer
+        System.out.print(userDouble + " cast to an integer is " + (int)userDouble);
+
+        return;
     }
 }
