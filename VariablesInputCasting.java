@@ -50,6 +50,8 @@ public class VariablesInputCasting {
         userString = scnr.next();
 
         // Output user input
-        System.out.print(userInt + " " + userDouble + " " + userChar + " " + userString);
+        System.out.println(userInt + " " + userDouble + " " + userChar + " " + userString);
+        // Output user input in reverse order
+        System.out.print(userString + " " + userChar + " " + userDouble + " " + userInt);
     }
 }
