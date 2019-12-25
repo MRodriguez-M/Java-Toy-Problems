@@ -25,6 +25,7 @@ Cans needed: 1 can(s)
 */
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class PaintingAWall {
     public static void main(String[] args) {
@@ -44,6 +45,11 @@ public class PaintingAWall {
 
         // Calculate and output paint needed in gallons
         double paintNeeded = wallArea / 350;
-        System.out.print("Paint needed: " + paintNeeded + " gallons");
+        System.out.println("Paint needed: " + paintNeeded + " gallons");
+
+        // Calculate and output 1 gallon cans needed
+        System.out.print("Cans needed: " + (int)Math.ceil(paintNeeded) + " can(s)");
+
+        return;
     }
 }
