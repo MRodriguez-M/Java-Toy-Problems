@@ -40,6 +40,10 @@ public class PaintingAWall {
 
         // Calculate and output wall area
         double wallArea = wallHeight * wallWidth;
-        System.out.print("Wall area: " + wallArea + " square feet");
+        System.out.println("Wall area: " + wallArea + " square feet");
+
+        // Calculate and output paint needed in gallons
+        double paintNeeded = wallArea / 350;
+        System.out.print("Paint needed: " + paintNeeded + " gallons");
     }
 }
