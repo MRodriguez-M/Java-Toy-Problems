@@ -33,6 +33,21 @@ public class TextMessageAbbreviationDecoder {
            // Output unabbreviated form
            System.out.print("I don't know");
        }
+       // Else if statement to check if user input is "BFF"
+       else if (abbreviation.equals("BFF")) {
+           // Output unabbreviated form
+           System.out.print("best friends forever");
+       }
+       // Else if statement to check if user input is "IMHO"
+       else if (abbreviation.equals("IMHO")) {
+           // Output unabbreviated form
+           System.out.print("in my humble opinion");
+       }
+       // Else if statement to check if user input is "TMI"
+       else if (abbreviation.equals("TMI")) {
+           // Output unabbreviated form
+           System.out.print("too much information");
+       }
        else {
            // Output message if user input does not match any of the above
            System.out.print("Unknown");
