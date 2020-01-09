@@ -37,6 +37,35 @@ public class TextMessageExpander {
         userInput = scnr.nextLine();
 
         // Output user input
-        System.out.print("You entered: " + userInput);
+        System.out.println("You entered: " + userInput);
+        System.out.print("\n");
+
+        // Five separate if statements to check for each of the available abbreviations
+        if (userInput.contains("BFF")) {
+            // Replace abbreviation with expanded version if in the string
+            System.out.println("Replaced \"BFF\" with \"best friend forever\".");
+            userInput = userInput.replace("BFF", "best friend forever");
+        }
+        if (userInput.contains("IDK")) {
+            System.out.println("Replaced \"IDK\" with \"I don't know\".");
+            userInput = userInput.replace("IDK", "I don't know");
+        }
+        if (userInput.contains("JK")) {
+            System.out.println("Replaced \"JK\" with \"just kidding\".");
+            userInput = userInput.replace("JK", "just kidding");
+        }
+        if (userInput.contains("TMI")) {
+            System.out.println("Replaced \"TMI\" with \"too much information\".");
+            userInput = userInput.replace("TMI", "too much information");
+        }
+        if (userInput.contains("TTYL")) {
+            System.out.println("Replaced \"TTYL\" with \"talk to you later\".");
+            userInput = userInput.replace("TTYL", "talk to you later");
+        }
+
+        // Output user input with expanded abbreviations
+        System.out.print("\nExpanded: " + userInput);
+
+        return;
     }
 }
