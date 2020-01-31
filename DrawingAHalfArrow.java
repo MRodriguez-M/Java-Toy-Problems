@@ -40,14 +40,21 @@ public class DrawingAHalfArrow {
     int arrowBaseWidth = 0;
     int arrowHeadWidth = 0;
     int h = 0;
+    int w = 0;
 
     // Prompt user for dimensions of arrow
     System.out.print("Enter arrow base height: ");
     arrowBaseHeight = scnr.nextInt();
+    System.out.print("Enter arrow base width: ");
+    arrowBaseWidth = scnr.nextInt();
 
     // For loop to print arrow base height
     for (h = 0; h < arrowBaseHeight; h++) {
-        System.out.println("*");
+        // Inner for loop to print arrow base width based on arrow base height
+        for (w = 1; w <= arrowBaseWidth; w++) {
+            System.out.print("*");
+        }
+        System.out.println("");
     }
     }
 }
