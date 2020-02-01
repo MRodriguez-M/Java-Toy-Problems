@@ -47,8 +47,11 @@ public class DrawingAHalfArrow {
     arrowBaseHeight = scnr.nextInt();
     System.out.print("Enter arrow base width: ");
     arrowBaseWidth = scnr.nextInt();
-    System.out.print("Enter arrow head width: ");
-    arrowHeadWidth = scnr.nextInt();
+    // While loop to check that arrow head width is not less than arrow base width
+    while (arrowHeadWidth <= arrowBaseWidth) {
+        System.out.print("Enter arrow head width: ");
+        arrowHeadWidth = scnr.nextInt();
+    }
 
     // For loop to print arrow base height
     for (h = 0; h < arrowBaseHeight; h++) {
