@@ -53,5 +53,13 @@ public class ParsingStrings {
         // Prompt user for string
         System.out.print("Enter input string: ");
         userInput = scnr.nextLine();
+
+        // While loop to check if user input does not contain a comma
+        while (!userInput.contains(",")) {
+            // Print error message and prompt user again if comma is not present
+            System.out.println("Error: No comma in string");
+            System.out.print("Enter input string: ");
+            userInput = scnr.nextLine();
+        }
     }
 }
