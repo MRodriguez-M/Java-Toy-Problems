@@ -61,5 +61,12 @@ public class ParsingStrings {
             System.out.print("Enter input string: ");
             userInput = scnr.nextLine();
         }
+
+        // Use split() to divide user string in two based on comma
+        String[] splitString = userInput.split(",");
+        // Output user string as two separate strings
+        System.out.println("First word: " + splitString[0].replace(" ", ""));
+        System.out.print("Second word: " + splitString[1].replace(" ", ""));
+
     }
 }
