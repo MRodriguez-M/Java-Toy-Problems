@@ -49,24 +49,34 @@ public class ParsingStrings {
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
         String userInput = "";
+        Boolean endProgram = false;
 
-        // Prompt user for string
-        System.out.print("Enter input string: ");
-        userInput = scnr.nextLine();
-
-        // While loop to check if user input does not contain a comma
-        while (!userInput.contains(",")) {
-            // Print error message and prompt user again if comma is not present
-            System.out.println("Error: No comma in string");
+        // While loop to check that Boolean to end program is not true
+        while (!endProgram) {
+            // Prompt user for string
             System.out.print("Enter input string: ");
             userInput = scnr.nextLine();
+
+            // If statement check that user input is not "q"
+            if (!userInput.equals("q")) {
+                // If statement to check if user input contains a comma
+                if (userInput.contains(",")) {
+                    // Use split() to divide user string in two based on comma
+                    String[] splitString = userInput.split(",");
+                    // Output user string as two separate strings
+                    System.out.println("First word: " + splitString[0].replace(" ", ""));
+                    System.out.println("Second word: " + splitString[1].replace(" ", ""));
+                    System.out.println("\n");
+                }
+                // Else statment to print error message if user input has no comma
+                else {
+                    System.out.println("Error: No comma in string");
+                }
+            }
+            // Else statement to change Boolean to end program if user input is "q"
+            else {
+                endProgram = true;
+            }
         }
-
-        // Use split() to divide user string in two based on comma
-        String[] splitString = userInput.split(",");
-        // Output user string as two separate strings
-        System.out.println("First word: " + splitString[0].replace(" ", ""));
-        System.out.print("Second word: " + splitString[1].replace(" ", ""));
-
     }
 }
