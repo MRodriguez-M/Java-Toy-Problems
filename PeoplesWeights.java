@@ -37,6 +37,7 @@ public class PeoplesWeights {
         final int NUM_ELEMENTS = 5;
         double[] weights = new double[NUM_ELEMENTS];
         int i = 0;
+        double sum = 0;
 
         // For loop to prompt user for five weights
         for (i = 0; i < NUM_ELEMENTS; i++) {
@@ -49,5 +50,12 @@ public class PeoplesWeights {
         for (i = 0; i < NUM_ELEMENTS; i++) {
             System.out.print(weights[i] + " ");
         }
+
+        // For loop to calculate the sum of all weights in the array
+        for (i = 0; i < weights.length; i++) {
+            sum = sum + weights[i];
+        }
+        // Output sum of weights
+        System.out.printf("\nTotal weight: " + sum);
     }
 }
