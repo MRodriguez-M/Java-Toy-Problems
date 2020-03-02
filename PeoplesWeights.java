@@ -59,6 +59,17 @@ public class PeoplesWeights {
         System.out.printf("\nTotal weight: " + sum);
         
         // Calculate and output average of weights
-        System.out.print("\nAverage weight: " + (sum / NUM_ELEMENTS));
+        System.out.println("\nAverage weight: " + (sum / NUM_ELEMENTS));
+
+        double maxWeight = weights[0];
+        // For loop to go through every value in the array
+        for (i = 0; i < weights.length; i++) {
+            // If statement to compare value to current max weight and change max weight if the value is greater
+            if (weights[i] > maxWeight) {
+                maxWeight = weights[i];
+            }
+        }
+        // Output max weight value
+        System.out.print("Max weight: " + maxWeight);
     }
 }
