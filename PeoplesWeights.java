@@ -57,5 +57,8 @@ public class PeoplesWeights {
         }
         // Output sum of weights
         System.out.printf("\nTotal weight: " + sum);
+        
+        // Calculate and output average of weights
+        System.out.print("\nAverage weight: " + (sum / NUM_ELEMENTS));
     }
 }
